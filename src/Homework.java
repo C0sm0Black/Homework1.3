@@ -1,21 +1,17 @@
 public class Homework {
     public static void main(String[] args) {
 
-        byte amountBananas = 5;
-        short amountMilk = 2;
-        byte amountIceCream = 2;
-        byte amountEggs = 4;
+        short amountWeight = 7000;
+        short planOnePerDay = 250;
+        short planTwoPerDay = 500;
 
-        byte weightBanana = 80;
-        byte weightMilk = 105;
-        byte weightIceCream = 100;
-        byte weightEgg = 70;
+        short dietOne = (short) (amountWeight / planOnePerDay);
+        short dietTwo = (short) (amountWeight / planTwoPerDay);
+        float averageValue = (float) (dietOne + dietTwo) / 2;
 
-        short grams = (short) (amountBananas * weightBanana + amountMilk * weightMilk + amountIceCream * weightIceCream + amountEggs * weightEgg);
-        float kilograms = (float) grams / 1000;
-
-        System.out.println(grams + " грамм");
-        System.out.println(kilograms + " килограмм");
+        System.out.println("Если спортсмен будет терять каждый день по 250 грамм на похудение уйдет " + dietOne + " дней");
+        System.out.println("Если спортсмен будет терять каждый день по 500 грамм на похудение уйдет " + dietTwo + " дней");
+        System.out.println("в среднем может потребоваться " + averageValue + " дней");
 
     }
 
