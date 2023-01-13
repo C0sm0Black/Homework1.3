@@ -1,14 +1,17 @@
 public class Homework {
     public static void main(String[] args) {
 
-        byte ludmilaPavlova = 23;
-        byte annaSergeevna = 27;
-        byte ekaterinaAndreevna = 30;
+        byte numberBottles = 16;
+        byte amountTime = 2;
+        byte twentyMinutes = 20;
+        short oneDay = 24 * 60;
+        short threeDays = 3 * 24 * 60;
+        long oneMouth = 30 * 24 * 60;
 
-        short totalStudent = (short) (ludmilaPavlova + annaSergeevna + ekaterinaAndreevna);
-        short totalList = 480;
-
-        System.out.println("На каждого ученика рассчитано " + totalList / totalStudent + " листов бумаги");
+        System.out.println("За 20 минут машина произвела " + ((twentyMinutes / amountTime) * numberBottles) + " штук бутылок");
+        System.out.println("За сутки машина произвела " + ((oneDay / amountTime) * numberBottles) + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + ((threeDays / amountTime) * numberBottles) + " штук бутылок");
+        System.out.println("За 1 месяц минут машина произвела " + ((oneMouth / amountTime) * numberBottles) + " штук бутылок");
 
     }
 
