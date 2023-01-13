@@ -1,12 +1,21 @@
 public class Homework {
     public static void main(String[] args) {
 
-        byte numberCans = 120;
-        byte whiteCan = 2;
-        byte brownCan = 4;
-        byte numberClasses = (byte) (numberCans / (whiteCan + brownCan));
+        byte amountBananas = 5;
+        short amountMilk = 2;
+        byte amountIceCream = 2;
+        byte amountEggs = 4;
 
-        System.out.println("В школе, где " + (numberClasses) + " классов, нужно " + numberClasses * whiteCan + " банок белой краски и " + numberClasses * brownCan + " банок коричневой краски");
+        byte weightBanana = 80;
+        byte weightMilk = 105;
+        byte weightIceCream = 100;
+        byte weightEgg = 70;
+
+        short grams = (short) (amountBananas * weightBanana + amountMilk * weightMilk + amountIceCream * weightIceCream + amountEggs * weightEgg);
+        float kilograms = (float) grams / 1000;
+
+        System.out.println(grams + " грамм");
+        System.out.println(kilograms + " килограмм");
 
     }
 
