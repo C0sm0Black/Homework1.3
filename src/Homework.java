@@ -1,17 +1,21 @@
 public class Homework {
     public static void main(String[] args) {
 
-        short amountWeight = 7000;
-        short planOnePerDay = 250;
-        short planTwoPerDay = 500;
+        int masha = 67760;
+        int denis = 83690;
+        int cristina = 76230;
 
-        short dietOne = (short) (amountWeight / planOnePerDay);
-        short dietTwo = (short) (amountWeight / planTwoPerDay);
-        float averageValue = (float) (dietOne + dietTwo) / 2;
+        float increaseMasha = (float) (masha * 1.1);
+        float increaseDenis = (float) (denis * 1.1);
+        float increaseCristina = (float) (cristina * 1.1);
 
-        System.out.println("Если спортсмен будет терять каждый день по 250 грамм на похудение уйдет " + dietOne + " дней");
-        System.out.println("Если спортсмен будет терять каждый день по 500 грамм на похудение уйдет " + dietTwo + " дней");
-        System.out.println("в среднем может потребоваться " + averageValue + " дней");
+        float annualDifferenceMasha = increaseMasha * 12 - masha * 12;
+        float annualDifferenceDenis = increaseDenis * 12 - denis * 12;
+        float annualDifferenceCristina = increaseCristina * 12 - cristina * 12;
+
+        System.out.println("Маша теперь получает " + increaseMasha + " рублей. Годовой доход вырос на " + annualDifferenceMasha + " рублей");
+        System.out.println("Денис теперь получает " + increaseDenis + " рублей. Годовой доход вырос на " + annualDifferenceDenis + " рублей");
+        System.out.println("Кристина теперь получает " + increaseCristina + " рублей. Годовой доход вырос на " + annualDifferenceCristina + " рублей");
 
     }
 
